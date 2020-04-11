@@ -65,8 +65,10 @@ def hello(event, context):
     message = messageToSlack(data)
     
     
-    slack = slackweb.Slack(url='https://hooks.slack.com/services/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')
-    slack.notify(text=message, channel="#hackaton-slack",username="serverless bot", icon_emoji=":squirrel: :shitpit:")
-
+  #  slack = slackweb.Slack(url='https://hooks.slack.com/services/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')
+  #  slack.notify(text=message, channel="#hackaton-slack",username="serverless bot", icon_emoji=":squirrel: :shitpit:")
+  # Personal Slack URL since the Reference is not working
+    slack = slackweb.Slack(url='https://hooks.slack.com/services/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')
+    slack.notify(text=message, channel="#geral",username="serverless bot", icon_emoji=":squirrel: :shitpit:")
     
 

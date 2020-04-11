@@ -27,7 +27,7 @@ functions:
   hello:
     handler: handler.hello
     environment:
-      GROUP: marionozima
+      GROUP: linkTeen
     layers:
       - {Ref: SlackLambdaLayer}
     events:
